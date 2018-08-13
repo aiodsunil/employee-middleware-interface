@@ -1,0 +1,36 @@
+{
+  "name": "employee-middleware-interface",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/server.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "babel -d ./build ./src",
+    "start": "nodemon ./src/server.js --exec babel-node --presets es2015,stage-2"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "nodemon": "^1.15.1"
+  },
+  "dependencies": {
+    "apollo-server-express": "^1.3.2",
+    "babel-polyfill": "^6.26.0",
+    "cors": "^2.8.4",
+    "express": "^4.16.2",
+    "express-graphql": "^0.6.12",
+    "graphql": "^0.13.2",
+    "graphql-tools": "^2.21.0",
+    "graphql-type-json": "^0.2.1",
+    "mongodb": "^3.0.2",
+    "mongoose": "^5.0.6",
+    "winston": "^2.4.1",
+    "winston-daily-rotate-file": "^3.0.1"
+  }
+}
